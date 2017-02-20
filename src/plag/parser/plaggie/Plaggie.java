@@ -567,7 +567,7 @@ public class Plaggie
     public static void main(String[] args) 
     {
     	// --> Set the path of the assignment folder in the 3rd slot in the array
-    	args = new String[] { "-none", "-none",	"C:/Users/LawanSubba/Desktop/Test" };
+    	args = new String[] { "-none", "-none",	"C:/Users/mdaum/Downloads/Assignment1" };
     	
 	try 
 	{
