@@ -36,6 +36,8 @@ import java.util.logging.FileHandler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
+
+
 import java.io.*;
 
 /**
@@ -564,10 +566,12 @@ public class Plaggie
      * The main program. Parses the command line parameters and runs
      * the detection algorithm and generates the report.
      */
-    public static void main(String[] args) 
+    public static void main(String[] args,Properties prop) 
     {
     	// --> Set the path of the assignment folder in the 3rd slot in the array
-    	args = new String[] { "-none", "-none",	"C:/Users/mdaum/Downloads/Assignment1" };
+    	System.out.println("Loading properties...");
+    	Properties p = prop;
+    	args = new String[] { "-none", "-none",	p.getProperty("inputFileFolderName") };
     	
 	try 
 	{

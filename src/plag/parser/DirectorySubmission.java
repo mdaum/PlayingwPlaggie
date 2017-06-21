@@ -80,7 +80,7 @@ public class DirectorySubmission
 	    throw new IllegalArgumentException("Not a directory: "+directory.getPath());
 	}
 	String[]pathParts = directory.getPath().split("\\\\");
-	this.name = pathParts[5];
+	this.name = pathParts[1];//the student's name
 	this.addDirectory(directory, filter, recursive);
 	Stats.addToDistribution("files_in_submission",(double)files.size());
 
